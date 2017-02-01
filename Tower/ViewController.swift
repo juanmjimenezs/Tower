@@ -88,7 +88,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     }
     
     func collisionBehavior(_ behavior: UICollisionBehavior, endedContactFor item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?) {
-        print("Identificador: \(identifier)")
+        
         if let view = item as? UIView {
             if view.tag > 1 {
                 let alertVC = UIAlertController(title: "Game Over", message: "You lose!", preferredStyle: .alert)
